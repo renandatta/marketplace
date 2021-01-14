@@ -11,8 +11,8 @@
                             <div class="owl-carousel">
                                 @foreach($sliders as $slider)
                                     <a class="block-slideshow__slide" href="#">
-                                        <div class="block-slideshow__slide-image block-slideshow__slide-image--desktop" style="background-image: url('{{ $slider->image }}');"></div>
-                                        <div class="block-slideshow__slide-image block-slideshow__slide-image--mobile" style="background-image: url('{{ $slider->image }}');"></div>
+                                        <div class="block-slideshow__slide-image block-slideshow__slide-image--desktop" style="background-image: url('{{ $slider->image_location }}');"></div>
+                                        <div class="block-slideshow__slide-image block-slideshow__slide-image--mobile" style="background-image: url('{{ $slider->image_location }}');"></div>
                                     </a>
                                 @endforeach
                             </div>
@@ -58,7 +58,9 @@
                 <div class="block-products__body">
                     <div class="block-products__featured">
                         <div class="block-products__featured-item">
-                            @include('home._product_grid', ['product' => $bestSellers[0]->product])
+                            @if(count($bestSellers) > 0)
+                                @include('home._product_grid', ['product' => $bestSellers[0]->product])
+                            @endif
                         </div>
                     </div>
                     <div class="block-products__list">

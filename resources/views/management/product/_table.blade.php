@@ -18,7 +18,7 @@
             <td>{{ $key+1 }}</td>
             <td>{{ $product->name }}</td>
             @if($store_id == null)
-                <td>{{ $product->store->name }}</td>
+                <td>{{ $product->store->name ?? '' }}</td>
             @endif
             <td class="text-right">{{ format_number($product->price) }}</td>
             <td class="text-right">{{ $product->stock }}</td>

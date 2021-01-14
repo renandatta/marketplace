@@ -91,6 +91,12 @@ Route::get('management/payment_type/info', 'ManagementPaymentTypeController@info
 Route::post('management/payment_type/save', 'ManagementPaymentTypeController@save')->name('management.payment_type.save');
 Route::post('management/payment_type/delete', 'ManagementPaymentTypeController@delete')->name('management.payment_type.delete');
 
+Route::get('management/product_category', 'ManagementProductCategoryController@index')->name('management.product_category');
+Route::post('management/product_category/search', 'ManagementProductCategoryController@search')->name('management.product_category.search');
+Route::get('management/product_category/info', 'ManagementProductCategoryController@info')->name('management.product_category.info');
+Route::post('management/product_category/save', 'ManagementProductCategoryController@save')->name('management.product_category.save');
+Route::post('management/product_category/delete', 'ManagementProductCategoryController@delete')->name('management.product_category.delete');
+
 Route::get('management/courier', 'ManagementCourierController@index')->name('management.courier');
 Route::post('management/courier/search', 'ManagementCourierController@search')->name('management.courier.search');
 Route::get('management/courier/info', 'ManagementCourierController@info')->name('management.courier.info');

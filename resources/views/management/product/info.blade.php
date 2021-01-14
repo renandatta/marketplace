@@ -76,10 +76,10 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="form-group">
-                            <label for="image">Foto Produk</label>
-                            <input type="file" class="dropify" name="image" id="image" @if(!empty($product) && count($product->images)) data-default-file="{{ $product->images[0]->location }}" @endif>
-                        </div>
+{{--                        <div class="form-group">--}}
+{{--                            <label for="image">Foto Produk</label>--}}
+{{--                            <input type="file" class="dropify" name="image" id="image" @if(!empty($product) && count($product->images)) data-default-file="{{ $product->images[0]->location }}" @endif>--}}
+{{--                        </div>--}}
                         @if(!empty($product))
                             <div class="text-right">
                                 <a class="btn btn-sm btn-success" href="{{ route('management.store.product.image', 'product_id=' . $product->id) }}"><i class="fa fa-images"></i> Tambahkan Foto Lainnya</a>

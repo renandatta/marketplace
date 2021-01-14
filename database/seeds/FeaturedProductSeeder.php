@@ -21,14 +21,14 @@ class FeaturedProductSeeder extends Seeder
             ['name' => 'For You', 'image' => 'https://picsum.photos/id/'. mt_rand(000, 200) .'/400'],
             ['name' => 'Promotion', 'image' => 'https://picsum.photos/id/'. mt_rand(000, 200) .'/400'],
         ]);
-        for ($j = 1; $j <= 5; $j++) {
-            for ($i = 0; $i <= rand(6, 9); $i++) {
-                FeaturedProductDetail::create([
-                    'featured_product_id' => $j,
-                    'product_id' => rand(1, 200),
-                    'order' => $i,
-                ]);
-            }
-        }
+//        for ($j = 1; $j <= 5; $j++) {
+//            for ($i = 0; $i <= rand(6, 9); $i++) {
+//                FeaturedProductDetail::create([
+//                    'featured_product_id' => $j,
+//                    'product_id' => rand(1, 200),
+//                    'order' => $i,
+//                ]);
+//            }
+//        }
     }
 }

@@ -51,6 +51,9 @@
                     <li class="nav-item @if(Session::get('menu_active') == 'user') active @endif">
                         <a class="nav-link" href="{{ route('management.user') }}">User</a>
                     </li>
+                    <li class="nav-item @if(Session::get('menu_active') == 'category') active @endif">
+                        <a class="nav-link" href="{{ route('management.product_category') }}">Produk Kategori</a>
+                    </li>
                     <li class="nav-item @if(Session::get('menu_active') == 'payment_type') active @endif">
                         <a class="nav-link" href="{{ route('management.payment_type') }}">Metode Pembayaran</a>
                     </li>
