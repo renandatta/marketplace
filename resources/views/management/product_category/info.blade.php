@@ -13,6 +13,8 @@
                 @if(!empty($productCategory))
                     <input type="hidden" name="id" value="{{ $productCategory->id }}">
                 @endif
+                <input type="hidden" name="code" value="{{ $code }}">
+                <input type="hidden" name="parent_code" value="{{ $parent_code }}">
                 <div class="form-group">
                     <label for="name">Nama</label>
                     <input type="text" class="form-control" id="name" name="name" value="{{ old('name', !empty($productCategory) ? $productCategory->name : '') }}" required>

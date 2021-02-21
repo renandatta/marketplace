@@ -11,8 +11,8 @@
                             @foreach($product->images as $key => $image)
                                 <div class="owl-item @if($key == 0) active @endif">
                                     <div class="product-image product-image--location--gallery">
-                                        <a href="{{ $image->location }}" class="product-image__body" target="_blank">
-                                            <img class="product-image__img" src="{{ $image->location }}" alt="" />
+                                        <a href="{{ $image->image_location }}" class="product-image__body" target="_blank">
+                                            <img class="product-image__img" src="{{ $image->image_location }}" alt="" />
                                         </a>
                                     </div>
                                 </div>
@@ -33,8 +33,8 @@
                         <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 500px;">
                             @foreach($product->images as $key => $image)
                                 <div class="owl-item @if($key == 0) active @endif">
-                                    <a href="{{ $image->location }}" class="product-image product-gallery__carousel-item @if($key == 0) product-gallery__carousel-item--active @endif">
-                                        <div class="product-image__body"><img class="product-image__img product-gallery__carousel-image" src="{{ $image->location }}" alt="" /></div>
+                                    <a href="{{ $image->image_location }}" class="product-image product-gallery__carousel-item @if($key == 0) product-gallery__carousel-item--active @endif">
+                                        <div class="product-image__body"><img class="product-image__img product-gallery__carousel-image" src="{{ $image->image_location }}" alt="" /></div>
                                     </a>
                                 </div>
                             @endforeach

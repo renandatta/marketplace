@@ -4,7 +4,7 @@
         <span class="fake-svg-icon"></span>
     </button>
     <div class="product-card__image product-image">
-        <a href="{{ route('product', $product->slug) }}" class="product-image__body"><img class="product-image__img" src="{{ $product->images[0]->location }}" alt="" /></a>
+        <a href="{{ route('product', $product->slug) }}" class="product-image__body"><img class="product-image__img" src="{{ $product->images[0]->image_location }}" alt="" /></a>
     </div>
     <div class="product-card__info">
         <div class="product-card__name"><a href="{{ route('product', $product->slug) }}">{{ $product->name }}</a></div>

@@ -19,8 +19,7 @@ class ProductImage extends Model
 
     public function getImageLocationAttribute()
     {
-        if ($this->location == '') return 'https://picsum.photos/id/'. mt_rand(000, 200) .'/400';
-        elseif (substr($this->location, 0, 5) == 'https') return $this->location;
+        if (substr($this->location, 0, 5) == 'https') return $this->location;
         else return asset('image/' . $this->location);
     }
 }

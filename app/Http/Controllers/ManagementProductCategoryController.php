@@ -35,8 +35,11 @@ class ManagementProductCategoryController extends Controller
 
     public function info(Request $request)
     {
+        $parent_code = $request->input('parent_code') ?? '#';
         $productCategory = $request->has('id') ? $this->productCategoryRepository->find($request->get('id')) : [];
-        return view('management.product_category.info', compact('productCategory'));
+        $parent_code = !empty($productCategory) ? $productCategory->parent_code : $parent_code;
+        $code = !empty($productCategory) ? $productCategory->code : $this->productCategoryRepository->code($parent_code);
+        return view('management.product_category.info', compact('productCategory', 'parent_code', 'code'));
     }
 
     public function save(Request $request)

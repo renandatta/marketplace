@@ -3,7 +3,7 @@
         @if($key < 3)
             <div class="dropcart__product">
                 <div class="product-image dropcart__product-image">
-                    <a href="{{ route('product', $userCart->product->slug) }}" class="product-image__body"><img class="product-image__img" src="{{ $userCart->product->images[0]->location }}" alt="" /></a>
+                    <a href="{{ route('product', $userCart->product->slug) }}" class="product-image__body"><img class="product-image__img" src="{{ $userCart->product->images[0]->image_location }}" alt="" /></a>
                 </div>
                 <div class="dropcart__product-info">
                     <div class="dropcart__product-name"><a href="{{ route('product', $userCart->product->slug) }}">{{ $userCart->product->name }}</a></div>

@@ -76,7 +76,7 @@
                         <tr class="cart-table__row">
                             <td class="cart-table__column cart-table__column--image">
                                 <a href="{{ route('product', $cart->product->slug) }}" class="product-image__body">
-                                    <img class="product-image__img" src="{{ $cart->product->images[0]->location }}" alt="" />
+                                    <img class="product-image__img" src="{{ $cart->product->images[0]->image_location }}" alt="" />
                                 </a>
                             </td>
                             <td class="cart-table__column cart-table__column--product">

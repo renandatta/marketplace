@@ -41,7 +41,7 @@
                             <td class="wishlist__column wishlist__column--image">
                                 <div class="product-image">
                                     <a href="{{ route('product', $wishlist->product->slug) }}" class="product-image__body">
-                                        <img class="product-image__img" src="{{ $wishlist->product->images[0]->location }}" alt="" />
+                                        <img class="product-image__img" src="{{ $wishlist->product->images[0]->image_location }}" alt="" />
                                     </a>
                                 </div>
                             </td>

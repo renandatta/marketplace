@@ -5,7 +5,7 @@
     </button>
     <div class="product-card__image product-image">
         @if(count($product->images) > 0)
-            <a href="{{ route('product', $product->slug) }}" class="product-image__body"><img class="product-image__img" src="{{ $product->images[0]->location }}" alt="" /></a>
+            <a href="{{ route('product', $product->slug) }}" class="product-image__body"><img class="product-image__img" src="{{ $product->images[0]->image_location }}" alt="" /></a>
         @endif
     </div>
     <div class="product-card__info">

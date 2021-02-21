@@ -65,7 +65,7 @@
                         </button>
                         <a class="mobile-header__logo" href="{{ route('/') }}">
                             <!-- mobile-logo -->
-                            <img src="{{ asset('images/logo.jpg') }}" alt="" class="img-fluid" style="height: 35px">
+                            <img src="{{ asset('images/logo.jpg') }}" alt="" class="img-fluid" style="height: 25px">
                             <!-- mobile-logo / end -->
                         </a>
                         <div class="search search--location--mobile-header mobile-header__search">
@@ -130,7 +130,7 @@
                 <div class="site-header__logo">
                     <a href="{{ route('/') }}">
                         <!-- logo -->
-                        <img src="{{ asset('images/logo.jpg') }}" alt="" class="img-fluid">
+                        <img src="{{ asset('images/logo.jpg') }}" alt="" class="img-fluid" style="height: 70px;">
                         <!-- logo / end -->
                     </a>
                 </div>
@@ -280,7 +280,7 @@
             <div class="container">
                 <div class="site-footer__bottom">
                     <div class="site-footer__copyright">
-                        Pidi-pidi by Renandatta
+                        Marketplace by Renandatta
                     </div>
                 </div>
             </div>

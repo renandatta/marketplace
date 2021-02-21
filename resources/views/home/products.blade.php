@@ -85,7 +85,7 @@
                                             <div class="widget-products__image">
                                                 <div class="product-image">
                                                     <a href="{{ route('product', $latestProduct->slug) }}" class="product-image__body">
-                                                        <img class="product-image__img" src="{{ $latestProduct->images[0]->location }}" alt="" />
+                                                        <img class="product-image__img" src="{{ $latestProduct->images[0]->image_location }}" alt="" />
                                                     </a>
                                                 </div>
                                             </div>
